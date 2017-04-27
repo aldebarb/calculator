@@ -24,6 +24,4 @@ function __autoload($class)
 		require $classPath;
 	}
 }
-
-//$(objVar) = new className($db); 
 ?>

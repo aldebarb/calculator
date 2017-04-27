@@ -13,6 +13,9 @@
 	<a href="index.php">Home</a>
 	<a href="index.php?p=standardForm">Standard Calculator</a>
     <a href="index.php?p=mortgageForm">Mortgage Calculator</a>
+    <a href="index.php?p=circleForm">Area of a Cricle</a>
+    <a href="index.php?p=rectangleFrom">Area of a Rectangle</a>
+    <a href="index.php?p=triangleForm">Area of a Triangle</a>
 
 </div>
 
