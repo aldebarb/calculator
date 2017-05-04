@@ -6,6 +6,9 @@
 <html>
 <head>
 	<title>Home</title>
+    <!-- Call the css file
+    <link rel="stylesheet" type="text/css" href="style/file.css"> 
+    -->
 </head>
 <body>
 <h2>Calculate the Web</h2>
@@ -13,7 +16,9 @@
 	<a href="index.php">Home</a>
 	<a href="index.php?p=standardForm">Standard Calculator</a>
     <a href="index.php?p=mortgageForm">Mortgage Calculator</a>
-
+    <a href="index.php?p=circleForm">Area of a Circle</a>
+    <a href="index.php?p=rectangleForm">Area of a Rectangle</a>
+    <a href="index.php?p=triangleForm">Area of a Triangle</a>
 </div>
 
 <div id="content">

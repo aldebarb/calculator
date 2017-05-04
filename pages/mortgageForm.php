@@ -6,6 +6,7 @@ Enter the interest amount: <input type="text" name="interest"><br><br>
 </form>
 
 <?php 
+
 if (isset($_POST['submit'])) {
 	array_map('removeMaliciousCode', $_POST);
 	$loan = $_POST['loan'];
