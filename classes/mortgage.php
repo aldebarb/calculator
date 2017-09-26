@@ -1,10 +1,10 @@
 <?php 
 class Mortgage
 {
-	protected $loan;
-	protected $months;
-	protected $interest;
-	protected $payment;
+	private $loan;
+	private $months;
+	private $interest;
+	private $payment;
 
     public function __construct($loan, $months, $interest)
     {

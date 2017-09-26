@@ -4,47 +4,42 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Home</title>
-    <!-- Call the css file
-    <link rel="stylesheet" type="text/css" href="style/file.css"> 
-    -->
-</head>
-<body>
-<h2>Calculate the Web</h2>
-<div id="menu">
-	<a href="index.php">Home</a>
-	<a href="index.php?p=standardForm">Standard Calculator</a>
-    <a href="index.php?p=mortgageForm">Mortgage Calculator</a>
-<<<<<<< HEAD
-    <a href="index.php?p=circleForm">Area of a Circle</a>
-    <a href="index.php?p=rectangleForm">Area of a Rectangle</a>
-    <a href="index.php?p=triangleForm">Area of a Triangle</a>
-=======
-    <a href="index.php?p=circleForm">Area of a Cricle</a>
-    <a href="index.php?p=rectangleFrom">Area of a Rectangle</a>
-    <a href="index.php?p=triangleForm">Area of a Triangle</a>
+    <head>
+	    <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css"> 
+    </head>
+    <body>
+        <h2>Calculate the Web</h2>
+        <div id="menu">
+	        <a href="index.php">Home</a>
+	        <a href="index.php?p=standardForm">Standard Calculator</a>
+            <a href="index.php?p=mortgageForm">Mortgage Calculator</a>
+            <a href="index.php?p=circleForm">Area of a Circle</a>
+            <a href="index.php?p=rectangleForm">Area of a Rectangle</a>
+            <a href="index.php?p=triangleForm">Area of a Triangle</a>
+        </div>
 
->>>>>>> cde4ffdec077f3b29d0d07387211e6850b31d3d7
-</div>
+        <div id="content">
+            
+            <?php 
+            $pages_dir = 'pages';
 
-<div id="content">
-    <?php 
-    $pages_dir = 'pages';
+            if (!empty($_GET['p'])) {
+    	        $pages = scandir($pages_dir, 0);
+    	        unset($pages[0], $pages[1]);
+    	        $p = $_GET['p'];
 
-    if (!empty($_GET['p'])) {
-    	$pages = scandir($pages_dir, 0);
-    	unset($pages[0], $pages[1]);
-    	$p = $_GET['p'];
-
-    	if (in_array($p . '.php', $pages)) {
-    		include ($pages_dir . '/' . $p . '.php');
+    	        if (in_array($p . '.php', $pages)) {
+    		        include ($pages_dir . '/' . $p . '.php');
     	
-    	} else {
-    		echo "Page not found";
-    	}
-    }
-    ?>
-</div>
-</body>
+    	        } else {
+    		        echo "Page not found";
+    	        }
+
+            } else {
+                echo "Welcome to the online calculator!";
+            }
+            ?>
+        </div>
+    </body>
 </html>

@@ -1,11 +1,11 @@
 
 <form method="post" action="">
-Enter first number: <input type="text" name="firstNumber" value=""><br><br>
-Enter second number: <input type="text" name="secondNumber" value=""><br><br>
-<input type="submit" name="add" value="+">
-<input type="submit" name="subtract" value="-">
-<input type="submit" name="multiply" value="x">
-<input type="submit" name="divide" value="/"><br><br>	
+    Enter first number: <input type="text" name="firstNumber" value=""><br><br>
+    Enter second number: <input type="text" name="secondNumber" value=""><br><br>
+    <input type="submit" name="add" value="+">
+    <input type="submit" name="subtract" value="-">
+    <input type="submit" name="multiply" value="x">
+    <input type="submit" name="divide" value="/"><br><br>	
 </form>
 
 <?php

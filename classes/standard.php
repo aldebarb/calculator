@@ -3,9 +3,9 @@
 
 class Standard
 {
-	protected $firstNumber;
-	protected $secondNumber;
-	protected $finalNumber;
+	private $firstNumber;
+	private $secondNumber;
+	private $finalNumber;
 
     public function __construct($firstNumber, $secondNumber)
     {

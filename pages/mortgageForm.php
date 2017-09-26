@@ -1,8 +1,8 @@
 <form method="post" action="">
-Enter the loan amount: <input type="text" name="loan"><br><br>
-Enter the amount of years: <input type="text" name="years"><br><br>
-Enter the interest amount: <input type="text" name="interest"><br><br>
-<input type="submit" name="submit" value="Calculate Payment">
+    Enter the loan amount: <input type="text" name="loan"><br><br>
+    Enter the amount of years: <input type="text" name="years"><br><br>
+    Enter the interest amount: <input type="text" name="interest"><br><br>
+    <input type="submit" name="submit" value="Calculate Payment">
 </form>
 
 <?php 
@@ -17,7 +17,6 @@ if (isset($_POST['submit'])) {
 		$mortgageCalculation = new Mortgage($loan, $months, $interest);
 		$payment = round($mortgageCalculation->calculatePayment(), 2);
 		echo "Your monthly payment will be $" . $payment;
-
 	}
 }
 
